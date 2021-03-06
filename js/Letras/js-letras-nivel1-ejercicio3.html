@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+
+
+var nombre = ['e', 'm', 'i', 'l', 'i', 'o'];
+
+var nombreCounts = nombre.reduce(function(obj, letra){
+    if (!obj[letra]) {
+        obj[letra] = 1;
+    } else {
+        obj[letra]++;
+    }
+    return obj;
+}, {});
+const nombre2 = new Map();
+        nombre2.set('e', 1);
+        nombre2.set('m', 1);
+        nombre2.set('i', 2);
+        nombre2.set('l', 1);
+        nombre2.set('o', 1);
+console.log(nombre2); 
+console.log(nombreCounts);
+   
+
+     
+        
+   
+    
+    </script>
+</body>
+</html>
