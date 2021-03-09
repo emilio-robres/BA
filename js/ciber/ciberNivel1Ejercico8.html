@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <script>
-    
- prompt    
-function calculadora(operador="suma",valor1=40,valor2=20) {
-       return valor1+valor2;
-    }
-function calculadora(operador="resta",valor1=40,valor2=20) {
-       return valor1-valor2;
-    }   
-if (operador="suma") {
-    document.write(calculadora("suma"));
+calculadora("resta",12,1);     
+function calculadora() {
+    let operador = arguments[0];
+    let num1 = arguments[1];
+    let num2 = arguments[2];
+     
+       switch (operador){
+            case "suma":
+            let resultSuma = num1+num2;
+            console.log(resultSuma);
+            break;
+            case "resta":
+            let resultResta = num1+num2;
+            console.log(resultResta);
+            break;
+            case "multiplicacion":
+            let resultMultiplicacion= num1*num2; 
+            console.log(resultMultiplicacion);   
+            break;
+            default: 
+            ("Introduce operación correcta");
+        }
+
 }
-    else{
-    document.write(calculadora("resta"));   
-    }
+    
+
     
 </script>
 
