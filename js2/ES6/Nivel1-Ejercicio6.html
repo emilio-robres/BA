@@ -28,10 +28,12 @@ var tasks = [
    'duration' : 240
 }];
 
-tasks.name.forEach(myfunction); 
+tasks.forEach(myFunction);
 
-function myfunction(item){
-console.log(item.name);
+function myFunction(name,index,arr) {
+  console.log(name.name); 
+  console.log(index);
+  console.log("arr",arr);
 }
 
     </script> 
