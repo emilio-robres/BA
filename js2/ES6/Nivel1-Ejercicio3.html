@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+//Donat el següent array de strings, mostrar per consola la frase completa usant .reduce()
+
+// Resultat per consola: 'a long time ago in a galaxy far far away'
+
+// Nota: no fa falta fer un "join".
+
+let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+let str = epic.reduce( function (acc,cur) {
+   return acc + " " + cur; 
+},); 
+
+console.log(str);
+
+
+
+
+   </script> 
+</body>
+</html>

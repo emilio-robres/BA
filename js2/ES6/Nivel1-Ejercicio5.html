@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Reemplaça en el següent bloc de codi la promesa per aync/await:
+
+
+// function b() {
+//    // ...
+// }
+// funtion a() {
+//    b().then() = > {
+//    doMoreWork();
+//    }
+// }
+
+
+const names=[];
+const introName=(nameFunction) => { 
+    names.push("Emilio")
+}
+async function b() {
+    let a = new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            names.push("Pedro");
+            resolve("Name written")
+            reject("Pendiente")
+        }, 6000)
+    })
+    
+    let result = await b;
+    
+    console.log(result);
+    console.log(names.length);
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
