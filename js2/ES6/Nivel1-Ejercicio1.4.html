@@ -10,20 +10,18 @@
 <body>
     <script>
 
-        function power1(base, exponent) { 
-        var result=1; 
-        for (var i=0; i < exponent; i++) { 
-                result *=base; 
-        } 
-        return result;
-        } 
-        console.log(power1(2,10));
+        // function power1(base, exponent) { 
+        // var result=1; 
+        // for (var i=0; i < exponent; i++) { 
+        //         result *=base; 
+        // } 
+        // return result;
+        // } 
+        // console.log(power1(2,10));
 
-        let x=0, result2=1,exponent2=1
-        for(x;x<exponent2;x++) {
-            const power2=(base2,exponent2) => result2 *=base2;
-            console.log(power2(2,20));
-        }
+       const power=(base,exponent)=>base**exponent;
+       console.log(power(2,10));
+        
          
         
 
